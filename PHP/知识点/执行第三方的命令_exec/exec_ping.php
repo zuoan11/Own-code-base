@@ -2,6 +2,9 @@
 /**
 *@param $ip target ip
 *@param $times ping times
+*注意：服务器是否安装ping
+*exec("ping 120.31.70.142 -c 4",$info,$error);
+*$error不为0时，是有问题
 */
 function ping($ip,$times=4)
 {  
