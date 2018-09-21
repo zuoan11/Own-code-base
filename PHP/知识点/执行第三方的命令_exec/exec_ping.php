@@ -39,6 +39,5 @@ function ping($ip,$times=4)
 // $ip = '192.168.71.28';//IP地址
 $ip = '120.31.70.142';
 print_r(ping($ip));
-sss
 ?>
 
