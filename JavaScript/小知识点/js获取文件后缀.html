@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>js获取文件后缀</title>
+</head>
+<body>
+	<script>
+		// 获取文件的后缀名
+	    var upFileName = input.files['0'].name;
+	    var index1     = upFileName.lastIndexOf(".");
+	    var index2     = upFileName.length;
+	    var suffix     = upFileName.substring(index1+1, index2);
+	    // 判断文件的后缀名是图片吗
+	    var img_ext_arr = ['jpeg', 'jpg', 'gif', 'png', 'bmp'];
+
+		if (!img_ext_arr.indexOf(suffix)) {
+	      $('#'+errorfield).html("非指定图片类型");
+	      return false;
+	    }
+	</script>
+</body>
+</html>
